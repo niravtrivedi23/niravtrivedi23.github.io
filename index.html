@@ -67,19 +67,27 @@
       width: 100%;
       max-height: 350px;
       border-radius: 8px;
-      object-fit: cover;
+      object-fit: contain;
       margin-top: 15px;
     }
 
-    .project-card .gif-pair {
+    .gif-pair {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
 
-    .project-card .gif-pair img {
-      width: 48%;
-      max-height: 280px;
+    .gif-box {
+      flex: 1 1 48%;
+      max-width: 48%;
+    }
+
+    .gif-box img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+      border-radius: 8px;
     }
 
     footer {
@@ -107,26 +115,32 @@
     <h2>📊 Highlighted Projects</h2>
 
     <div class="project-card">
-      <h3>1. IPL Dashboard (Power BI )</h3>
-      <p>I built an Interactive IPL dashboard using Power BI , which allows users to analyze player performance, team stats, and match outcomes through filters and visual insights.</p>
+      <h3>1. IPL Dashboard (Python + Streamlit)</h3>
+      <p>I built an interactive IPL dashboard using Python and Streamlit, which allows users to analyze player performance, team stats, and match outcomes through filters and visual insights.</p>
       <a href="https://github.com/niravtrivedi23/IPL-Dashboard" target="_blank">View Project</a>
       <img src="https://raw.githubusercontent.com/niravtrivedi23/IPL-Dashboard/main/IPL%20Dashboard.png" alt="IPL Dashboard Preview" />
     </div>
 
     <div class="project-card">
-      <h3>2. Mutual Fund Analysis (Python + Power BI + Excel)</h3>
+      <h3>2. Mutual Fund Analysis (Python + Power BI)</h3>
       <p>This project analyzes Indian mutual fund performance to identify low-risk, high-confidence investment options using Python data analysis and Power BI visual dashboards.</p>
       <a href="https://github.com/niravtrivedi23/mutual-fund-analysis-Dashboard-Python-PowerBI" target="_blank">View Project</a>
       <img src="https://raw.githubusercontent.com/niravtrivedi23/mutual-fund-analysis-Dashboard-Python-PowerBI/main/Mutual%20Fund%20Dashboard%20.png" alt="Mutual Fund Dashboard" />
     </div>
 
     <div class="project-card">
-      <h3>3. Tapi River Sustainability (Google Earth Engine + Python + Excel)</h3>
-      <p>This academic project assesses the sustainability of Surat’s Tapi River using satellite data from 1987 to 2023, focusing on turbidity trends from 2019 to 2023 and cumulative width changes from 1987 to 2021 over the years.</p>
+      <h3>3. Tapi River Sustainability (Google Earth Engine + Python)</h3>
+      <p>This academic project assesses the sustainability of Surat’s Tapi River using satellite data from 1987 to 2023, focusing on turbidity trends and cumulative width changes over the years.</p>
       <a href="https://github.com/niravtrivedi23/Surat-Tapiriver-Analysis-GEE" target="_blank">View Project</a>
       <div class="gif-pair">
-        <img src="https://raw.githubusercontent.com/niravtrivedi23/Surat-Tapiriver-Analysis-GEE/main/Visualization/ndtI_VISUALIZATION_2.gif" alt="Tapi River Turbidity" />
-        <img src="https://raw.githubusercontent.com/niravtrivedi23/Surat-Tapiriver-Analysis-GEE/main/Visualization/cumalative_Width_gif.gif" alt="Tapi River Width" />
+        <div class="gif-box">
+          <p><strong>Turbidity of Tapi River (2019–2023)</strong></p>
+          <img src="https://raw.githubusercontent.com/niravtrivedi23/Surat-Tapiriver-Analysis-GEE/main/Visualization/ndtI_VISUALIZATION_2.gif" alt="Tapi Turbidity GIF" />
+        </div>
+        <div class="gif-box">
+          <p><strong>Changes in Tapi River Width (1987–2021)</strong></p>
+          <img src="https://raw.githubusercontent.com/niravtrivedi23/Surat-Tapiriver-Analysis-GEE/main/Visualization/cumalative_Width_gif.gif" alt="Tapi Width GIF" />
+        </div>
       </div>
     </div>
   </div>
