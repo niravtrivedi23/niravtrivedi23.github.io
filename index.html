@@ -6,14 +6,28 @@
   <title>Nirav Trivedi | Data Analyst Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* Animated + Chart background */
     body {
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(-45deg, #20c997, #6f42c1, #0dcaf0, #fd7e14);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
       margin: 0;
       padding: 0;
       color: #333;
+      background: linear-gradient(-45deg, #20c997, #6f42c1, #0dcaf0, #fd7e14);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: -1;
+      opacity: 0.08;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+      background-repeat: repeat;
+      background-size: 300px;
     }
 
     @keyframes gradientBG {
@@ -199,24 +213,6 @@
           <img src="https://raw.githubusercontent.com/niravtrivedi23/Surat-Tapiriver-Analysis-GEE/main/Visualization/cumalative_Width_gif.gif" alt="Tapi Width GIF" />
         </div>
       </div>
-    </div>
-
-    <h2> About Me</h2>
-    <div class="project-card">
-      <p>
-        I'm a passionate Data Analyst who loves transforming raw data into powerful insights. With hands-on experience in Excel, Python, SQL, and Power BI, I create interactive dashboards, automate tasks, and solve real-world problems using data.  
-        <br><br>
-        I’ve built projects in areas like IPL analysis, mutual fund performance, and environmental monitoring using satellite data. I always aim to make data simple, visual, and impactful.
-      </p>
-    </div>
-
-    <h2>🛠 Skills</h2>
-    <div class="project-card">
-      <ul>
-        <li><strong>Languages:</strong> Python, SQL</li>
-        <li><strong>Visualization:</strong> Power BI, Matplotlib, Seaborn</li>
-        <li><strong>Excel:</strong> Functions, Pivot Tables, Charts, Automation</li>
-      </ul>
     </div>
   </div>
 
