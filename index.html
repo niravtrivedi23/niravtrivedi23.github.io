@@ -8,16 +8,17 @@
   <style>
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #f0f4f8;
+      background-color: #f4f7fa;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #008080;
+      background: linear-gradient(120deg, #00796b, #26a69a);
       color: white;
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .container {
@@ -27,14 +28,14 @@
     }
 
     h2 {
-      color: #333;
+      color: #222;
       margin-top: 40px;
       border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
     }
 
     p {
-      color: #555;
+      color: #444;
     }
 
     ul {
@@ -44,31 +45,35 @@
     a {
       color: #0066cc;
       text-decoration: none;
+      font-weight: 500;
     }
 
     a:hover {
       text-decoration: underline;
+      color: #004d99;
     }
 
     .project-card {
       background-color: #fff;
       border: 1px solid #ddd;
-      border-radius: 8px;
+      border-radius: 10px;
       padding: 20px;
       margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease-in-out;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease-in-out;
     }
 
     .project-card:hover {
-      transform: scale(1.02);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #f9f9f9;
-      color: #777;
+      background-color: #e0f2f1;
+      color: #333;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -89,26 +94,26 @@
     <h2>📊 Highlighted Projects</h2>
 
     <div class="project-card">
-      <strong>1. IPL Dashboard (Power BI + Streamlit)</strong><br/>
-      <a href="https://github.com/niravtrivedi23/IPL-Streamlit-Dashboard" target="_blank">View Project</a>
-      <p>A dashboard analyzing IPL cricket performance using Python and Streamlit.</p>
+      <strong>1. IPL Dashboard (Power BI)</strong><br/>
+      <a href="https://github.com/niravtrivedi23/IPL-Dashboard" target="_blank">View Project</a>
+      <p>Analyzed IPL cricket data using Python and Streamlit with interactive visuals and filters.</p>
     </div>
 
     <div class="project-card">
-      <strong>2. Mutual Fund Analysis (Python + Pwer BI + Excel)</strong><br/>
+      <strong>2. Mutual Fund Analysis (Python + Power BI + Excel)</strong><br/>
       <a href="https://github.com/niravtrivedi23/Mutual-Fund-Analysis" target="_blank">View Project</a>
-      <p>Identified high-confidence mutual funds using historical data, visualization, and analysis.</p>
+      <p>Analyzed mutual fund performance and identified low-risk options using Python and visualization tools.</p>
     </div>
 
     <div class="project-card">
       <strong>3. Tapi River Sustainability (GEE + Python + Excel)</strong><br/>
       <a href="https://github.com/niravtrivedi23/Surat-Tapiriver-Analysis-GEE" target="_blank">View Project</a>
-      <p>Used satellite data to study river width and turbidity changes from 1987–2023.</p>
+      <p>Studied environmental changes in Surat’s Tapi River using Google Earth Engine and historical data.</p>
     </div>
   </div>
 
   <footer>
-    © 2024 Nirav Trivedi | Powered by GitHub Pages
+     Nirav Trivedi | Powered by GitHub Pages
   </footer>
 
 </body>
