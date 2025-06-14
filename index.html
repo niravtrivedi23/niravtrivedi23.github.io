@@ -8,72 +8,85 @@
   <style>
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #f4f7fa;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
       margin: 0;
       padding: 0;
+      color: #333;
     }
 
     header {
-      background: linear-gradient(120deg, #00796b, #26a69a);
+      background: linear-gradient(90deg, #00796b, #26a69a);
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 50px 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 32px;
     }
 
     .container {
       padding: 40px 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
 
     h2 {
-      color: #222;
-      margin-top: 40px;
       border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
-    }
-
-    p {
-      color: #444;
-    }
-
-    ul {
-      padding-left: 20px;
+      color: #222;
     }
 
     a {
-      color: #0066cc;
+      color: #007acc;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: bold;
     }
 
     a:hover {
       text-decoration: underline;
-      color: #004d99;
+      color: #005c99;
     }
 
     .project-card {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
       padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease-in-out;
+      transition: transform 0.3s ease;
     }
 
     .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      max-height: 350px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-top: 15px;
+    }
+
+    .project-card .gif-pair {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .project-card .gif-pair img {
+      width: 48%;
+      max-height: 280px;
     }
 
     footer {
+      background-color: #e0f2f1;
+      color: #555;
       text-align: center;
       padding: 20px;
-      background-color: #e0f2f1;
-      color: #333;
-      margin-top: 40px;
     }
   </style>
 </head>
@@ -94,26 +107,32 @@
     <h2>📊 Highlighted Projects</h2>
 
     <div class="project-card">
-      <strong>1. IPL Dashboard (Power BI)</strong><br/>
+      <h3>1. IPL Dashboard (Power BI )</h3>
+      <p>I built an Interactive IPL dashboard using Power BI , which allows users to analyze player performance, team stats, and match outcomes through filters and visual insights.</p>
       <a href="https://github.com/niravtrivedi23/IPL-Dashboard" target="_blank">View Project</a>
-      <p>Analyzed IPL cricket data using Python and Streamlit with interactive visuals and filters.</p>
+      <img src="https://raw.githubusercontent.com/niravtrivedi23/IPL-Dashboard/main/IPL%20Dashboard.png" alt="IPL Dashboard Preview" />
     </div>
 
     <div class="project-card">
-      <strong>2. Mutual Fund Analysis (Python + Power BI + Excel)</strong><br/>
-      <a href="https://github.com/niravtrivedi23/Mutual-Fund-Analysis" target="_blank">View Project</a>
-      <p>Analyzed mutual fund performance and identified low-risk options using Python and visualization tools.</p>
+      <h3>2. Mutual Fund Analysis (Python + Power BI + Excel)</h3>
+      <p>This project analyzes Indian mutual fund performance to identify low-risk, high-confidence investment options using Python data analysis and Power BI visual dashboards.</p>
+      <a href="https://github.com/niravtrivedi23/mutual-fund-analysis-Dashboard-Python-PowerBI" target="_blank">View Project</a>
+      <img src="https://raw.githubusercontent.com/niravtrivedi23/mutual-fund-analysis-Dashboard-Python-PowerBI/main/Mutual%20Fund%20Dashboard%20.png" alt="Mutual Fund Dashboard" />
     </div>
 
     <div class="project-card">
-      <strong>3. Tapi River Sustainability (GEE + Python + Excel)</strong><br/>
+      <h3>3. Tapi River Sustainability (Google Earth Engine + Python + Excel)</h3>
+      <p>This academic project assesses the sustainability of Surat’s Tapi River using satellite data from 1987 to 2023, focusing on turbidity trends from 2019 to 2023 and cumulative width changes from 1987 to 2021 over the years.</p>
       <a href="https://github.com/niravtrivedi23/Surat-Tapiriver-Analysis-GEE" target="_blank">View Project</a>
-      <p>Studied environmental changes in Surat’s Tapi River using Google Earth Engine and historical data.</p>
+      <div class="gif-pair">
+        <img src="https://raw.githubusercontent.com/niravtrivedi23/Surat-Tapiriver-Analysis-GEE/main/Visualization/ndtI_VISUALIZATION_2.gif" alt="Tapi River Turbidity" />
+        <img src="https://raw.githubusercontent.com/niravtrivedi23/Surat-Tapiriver-Analysis-GEE/main/Visualization/cumalative_Width_gif.gif" alt="Tapi River Width" />
+      </div>
     </div>
   </div>
 
   <footer>
-     Nirav Trivedi | Powered by GitHub Pages
+    © 2024 Nirav Trivedi | Powered by GitHub Pages
   </footer>
 
 </body>
