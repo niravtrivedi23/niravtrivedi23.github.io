@@ -6,7 +6,6 @@
   <title>Nirav Trivedi | Data Analyst Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* Animated + Chart background */
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
@@ -16,7 +15,6 @@
       background-size: 400% 400%;
       animation: gradientBG 15s ease infinite;
       position: relative;
-      z-index: 0;
     }
 
     body::before {
@@ -101,11 +99,6 @@
       transition: color 0.3s ease;
     }
 
-    a:hover {
-      color: #ffee58;
-      text-decoration: underline;
-    }
-
     ul {
       color: white;
       padding-left: 20px;
@@ -131,6 +124,21 @@
       border-radius: 8px;
       object-fit: contain;
       margin-top: 15px;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #007bff;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .project-link:hover {
+      background-color: #0056b3;
     }
 
     .gif-pair {
@@ -188,21 +196,21 @@
     <div class="project-card">
       <h3>1. IPL Dashboard (Power BI)</h3>
       <p>I built an interactive IPL dashboard using Python and Streamlit, which allows users to analyze player performance, team stats, and match outcomes through filters and visual insights.</p>
-      <a href="https://github.com/niravtrivedi23/IPL-Dashboard" target="_blank">View Project</a>
+      <a class="project-link" href="https://github.com/niravtrivedi23/IPL-Dashboard" target="_blank">🔗 View Project</a>
       <img src="https://raw.githubusercontent.com/niravtrivedi23/IPL-Dashboard/main/IPL%20Dashboard.png" alt="IPL Dashboard Preview" />
     </div>
 
     <div class="project-card">
       <h3>2. Mutual Fund Analysis (Python + Power BI + Excel)</h3>
       <p>This project analyzes Indian mutual fund performance to identify low-risk, high-confidence investment options using Python data analysis and Power BI visual dashboards.</p>
-      <a href="https://github.com/niravtrivedi23/mutual-fund-analysis-Dashboard-Python-PowerBI" target="_blank">View Project</a>
+      <a class="project-link" href="https://github.com/niravtrivedi23/mutual-fund-analysis-Dashboard-Python-PowerBI" target="_blank">🔗 View Project</a>
       <img src="https://raw.githubusercontent.com/niravtrivedi23/mutual-fund-analysis-Dashboard-Python-PowerBI/main/Mutual%20Fund%20Dashboard%20.png" alt="Mutual Fund Dashboard" />
     </div>
 
     <div class="project-card">
       <h3>3. Tapi River Sustainability (Google Earth Engine + Python + Excel)</h3>
       <p>This academic project assesses the sustainability of Surat’s Tapi River using satellite data from 1987 to 2023, focusing on turbidity trends and cumulative width changes over the years.</p>
-      <a href="https://github.com/niravtrivedi23/Surat-Tapiriver-Analysis-GEE" target="_blank">View Project</a>
+      <a class="project-link" href="https://github.com/niravtrivedi23/Surat-Tapiriver-Analysis-GEE" target="_blank">🔗 View Project</a>
       <div class="gif-pair">
         <div class="gif-box">
           <p><strong>Turbidity of Tapi River (2019–2023)</strong></p>
